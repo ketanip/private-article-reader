@@ -13,7 +13,7 @@ const ArticlePage: NextPage = () => {
         url: String(router.query.url)
     })
     .then(resp => {
-        setArticle(resp.data);
+        setArticle(resp.data.article);
     })
     .catch(err => console.log(err));
 
