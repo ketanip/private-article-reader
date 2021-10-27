@@ -20,9 +20,9 @@ const ArticlePage: NextPage = () => {
     return (
         <div className="container">
             <div className=" container article-container" >
-                <noscript>
+                {/* <noscript> */}
                     <div dangerouslySetInnerHTML={{ __html: article }}></div>
-                </noscript>
+                {/* </noscript> */}
             </div>
         </div>
     );
