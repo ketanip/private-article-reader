@@ -7,8 +7,7 @@ This is a simple Next JS application that can parse article from any given valid
 1. Next.js
 2. Skelton CSS
 
-To run it locally 
-
+## Run it Locally
 ```
 git clone ...
 cd medium-alternative-frontend
@@ -16,4 +15,5 @@ yarn
 yarn dev
 ```
 
-This is just for educational purposes.
+## Disclaimer
+This is just for educational purposes do not abuse it or any other service directly or indirectly with it.
