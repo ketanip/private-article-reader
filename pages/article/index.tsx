@@ -20,7 +20,9 @@ const ArticlePage: NextPage = () => {
     return (
         <div className="container">
             <div className=" container article-container" >
-                <div dangerouslySetInnerHTML={{ __html: article }}></div>
+                <noscript>
+                    <div dangerouslySetInnerHTML={{ __html: article }}></div>
+                </noscript>
             </div>
         </div>
     );
