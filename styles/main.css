@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.article-container img{
+  max-width: 100%; 
+  height: auto; 
+  display: block;
+  margin: 1rem auto;
+}
+
+.article-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+li {
+    font-size: 1.7rem;
+}
+
+pre {
+    background: #ececec;
+    padding: 10px;
+    border-radius: 5px;
+}
