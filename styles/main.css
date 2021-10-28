@@ -38,7 +38,10 @@ li {
 }
 
 pre {
-    background: #ececec;
     padding: 10px;
     border-radius: 5px;
+}
+
+pre, code {
+    background-color: #e6e6e6;
 }
