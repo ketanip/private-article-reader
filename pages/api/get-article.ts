@@ -14,7 +14,7 @@ export default async function handler(
     };
   
     const article = await extract(req.body.url)
-    res.status(200).json({article: article.content});
+    res.status(200).json({article: article});
 
   } catch (error) {
     

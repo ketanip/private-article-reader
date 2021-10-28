@@ -9,7 +9,11 @@ const Home: NextPage = () => {
 
   const HandleForm = (e: FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
-    router.push(`/article?url=${articleURL.trim()}`);
+    let article_url = articleURL.trim();
+
+    if (article_url) {
+      router.push(`/article?url=${article_url}`);
+    };
   };
 
   return (
@@ -22,6 +26,7 @@ const Home: NextPage = () => {
           onChange={(e)=>setArticleURL(e.target.value)}
           name="url" 
           type="url" 
+          required
           className="u-full-width" 
           placeholder="https://medium.engineering/how-we-build-swiftui-features-in-the-medium-application-21323a960910" />
         <br />

@@ -5,6 +5,10 @@
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
+body {
+    background: rgb(241, 241, 241)
+}
+
 .article-container img{
   max-width: 100%; 
   height: auto; 
@@ -19,6 +23,14 @@
 
 p {
     font-size: 2rem;
+}
+
+b {
+    font-size: 2rem;
+}
+
+small {
+    font-size: 1.5rem;
 }
 
 li {
