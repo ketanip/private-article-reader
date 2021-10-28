@@ -37,7 +37,7 @@ const Home: NextPage = () => {
 
       <p>This is a website where you can put link to any article be it news, personal blogs or any other article and read it here in a privacy focused environment without tracking.</p>
 
-      <p>Source code for this website can be found on <a href="https://github.com/KetanIP/private-article-reader" target="_blank"><b>Github</b></a></p>
+      <p>Source code for this website can be found on <a href="https://github.com/KetanIP/private-article-reader" target="_blank" rel="noreferrer" ><b>Github</b></a></p>
 
     </div>
   );
