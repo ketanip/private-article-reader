@@ -1,44 +1,61 @@
-import type { NextPage } from 'next';
-import { useRouter } from 'next/router';
-import { FormEvent, useState } from 'react';
+import type { NextPage } from "next";
+import { useRouter } from "next/router";
+import { FormEvent, useState } from "react";
+import { Navbar } from "../components/Navbar";
 
 const Home: NextPage = () => {
-
   const router = useRouter();
-  const [articleURL, setArticleURL] = useState('');
-
-  const HandleForm = (e: FormEvent<HTMLFormElement>) => {
+  const [articleURL, setArticleURL] = useState("");
+  const submitForm = (e: FormEvent) => {
     e.preventDefault();
-    let article_url = articleURL.trim();
-
-    if (article_url) {
-      router.push(`/article?url=${article_url}`);
-    };
+    router.push(`/article?url=${articleURL}`);
   };
 
   return (
-    <div className="container" style={{ marginTop: 100 }}>
+    <div>
+      <Navbar />
+      <div className="max-w-7xl px-5 mx-auto my-5 text-2xl">
+        <form onSubmit={submitForm}>
+          <input
+            onChange={(e) => setArticleURL(e.target.value.trim())}
+            name="url"
+            type="url"
+            placeholder="Enter article URL here."
+            className="px-4 py-3 outline-none border-b-2 min-w-full border-b-gray-800"
+            required
+            autoComplete="on"
+            autoFocus={true}
+          />
 
-      <h1>Article Reader</h1>
+          <button
+            className="mt-5 bg-blue-600 hover:bg-blue-500 hover:shadow-lg px-4 py-2 rounded text-white font-semibold"
+            type="submit"
+          >
+            Read Article
+          </button>
+        </form>
 
-      <form onSubmit={HandleForm} >
-        <input
-          onChange={(e) => setArticleURL(e.target.value)}
-          name="url"
-          type="url"
-          required
-          className="u-full-width"
-          placeholder="Enter article URL here." />
-        <br />
-        <button className="button button-primary" type="submit">Read Article</button>
-      </form>
+        <hr className="my-10 bg-gray-300 h-0.5 rounded-full" />
 
-      <hr />
-
-      <p>This is a website where you can put link to any article be it news, personal blogs or any other article and read it here in a privacy focused environment without tracking.</p>
-
-      <p>Source code for this website can be found on <a href="https://github.com/KetanIP/private-article-reader" target="_blank" rel="noreferrer" ><b>Github</b></a></p>
-
+        <div className="flex flex-col gap-4" id="how-it-works">
+          <h3 className="text-4xl underline font-bold mb-5">How it works?</h3>
+          <p>
+            <span className="font-bold">Step 1 : </span>
+            <span>You enter URL.</span>
+          </p>
+          <p>
+            <span className="font-bold">Step 2 : </span>
+            <span>
+              Our bots go and fetch the page and take out article content and
+              strips everything else including trackers.
+            </span>
+          </p>
+          <p>
+            <span className="font-bold">Step 3 : </span>
+            <span>We display it in and easy to read format.</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
