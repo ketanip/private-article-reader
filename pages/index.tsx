@@ -2,12 +2,16 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { FormEvent, useState } from "react";
 import { Navbar } from "../components/Navbar";
+import {SyncLoader} from "react-spinners";
 
 const Home: NextPage = () => {
   const router = useRouter();
   const [articleURL, setArticleURL] = useState("");
+  const [articleLoading, setArticleLoading] = useState(false);
+
   const submitForm = (e: FormEvent) => {
     e.preventDefault();
+    setArticleLoading(true);
     router.push(`/article?url=${articleURL}`);
   };
 
@@ -28,10 +32,12 @@ const Home: NextPage = () => {
           />
 
           <button
-            className="mt-5 bg-blue-600 hover:bg-blue-500 hover:shadow-lg px-4 py-2 rounded text-white font-semibold"
+            className="mt-5 bg-blue-600 hover:bg-blue-500 disabled:bg-blue-300 hover:shadow-lg px-4 py-2 rounded text-white font-semibold cursor-pointer"
             type="submit"
+            disabled={articleLoading}
           >
-            Read Article
+            {!articleLoading ? "Read Article" : <SyncLoader />}
+            
           </button>
         </form>
 
