@@ -47,7 +47,8 @@ const Home: NextPage = () => {
           <h3 className="text-4xl underline font-bold mb-5">How it works?</h3>
           <p>
             <span className="font-bold">Step 1 : </span>
-            <span>You enter URL.</span>
+            <span>You enter URL. ( News Item / Blog )</span>
+            <span>Example: https://ghost.org/resources/how-to-setup-your-ghost-publication/</span>
           </p>
           <p>
             <span className="font-bold">Step 2 : </span>
