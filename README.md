@@ -1,7 +1,7 @@
 # Private article reader. 👓
 
-![Private Article Reader - Home Page](/readme-assets/article-image.jpg)
-![Private Article Reader - Demo Article Page](/readme-assets/landing-page.jpg)
+![Private Article Reader - Home Page](/readme-assets/article-image.png)
+![Private Article Reader - Demo Article Page](/readme-assets/landing-page.png)
 
 `Private Article Reader` is a Next.JS app that scrapes, parses the article and shows it in a standard easy-to-understand manner. It removes all JavaScript from the original page, including but not limited to trackers and other elements such as inputs and buttons. 🚀
 
