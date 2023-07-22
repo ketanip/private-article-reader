@@ -10,6 +10,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "^18"
+  },
   "dependencies": {
     "@extractus/article-extractor": "^8.0.0",
     "@types/node": "20.4.3",
@@ -29,13 +32,13 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9"
-  }, 
+  },
   "author": {
     "name": "Ketan Iralepatil",
     "url": "https://ketaniralepatil.com"
-},
-"repository": {
+  },
+  "repository": {
     "type": "git",
     "url": "https://github.com/ketanip/private-article-reader.git"
-}
+  }
 }
