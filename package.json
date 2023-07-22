@@ -1,6 +1,8 @@
 {
-  "name": "private-article-reader-1",
-  "version": "0.1.0",
+  "name": "private-article-reader",
+  "version": "0.3.0",
+  "description": "This project is aimed at providing a simple distraction free way to read and enjoy articles.",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -27,5 +29,13 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9"
-  }
+  }, 
+  "author": {
+    "name": "Ketan Iralepatil",
+    "url": "https://ketaniralepatil.com"
+},
+"repository": {
+    "type": "git",
+    "url": "https://github.com/ketanip/private-article-reader.git"
+}
 }
