@@ -1,9 +1,9 @@
 # Private article reader. 👓
 
 ![Private Article Reader - Demo Article Page](/readme-assets/landing-page.png)
-![Private Article Reader - Home Page](/readme-assets/article-image.png) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fketanip%2Fprivate-article-reader)
+![Private Article Reader - Home Page](/readme-assets/article-image.png) 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2Fketanip%2Fprivate-article-readert)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fketanip%2Fprivate-article-reader) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2Fketanip%2Fprivate-article-readert)
 
 ✨ See live demo [here](https://private-article-reader.vercel.app/).
 
